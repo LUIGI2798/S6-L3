@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #007bff;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: wheat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInDown 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description {
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.button-group a {
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.button-group a:hover {
+  transform: scale(1.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
